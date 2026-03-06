@@ -1,21 +1,17 @@
 .DS_Store
-*.swp
-*~
-*~.nib
-*.orig
-build/
+/.build
+.swiftpm/
+/Packages
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
 
-*.pbxuser
-*.perspective
-*.perspectivev3
-*.mode1v3
-*.mode2v3
-xcuserdata
-project.xcworkspace
-.idea
-pkg
-build.output
-.vagrant
-
-*.xcscmblueprint
-.build
+*.trace
+measurements.txt
+data.txt
+test.txt
+measurements_huge.txt measurements.txt
+weather_stations.csv
+measurements_huge.txt

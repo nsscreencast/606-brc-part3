@@ -1,0 +1,16 @@
+
+[tasks.build]
+run = "swift build"
+
+
+[tasks.build-release]
+run = "swift build -c release"
+
+[tasks.go]
+depends = ["build-release"]
+run = "time .build/release/1brc"
+
+[tasks.go-big]
+depends = ["build-release"]
+env = { "INPUT_FILE" = "measurements_huge.txt" }
+run = "time .build/release/1brc"
